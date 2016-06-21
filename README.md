@@ -1,11 +1,11 @@
-#Omaha Java User Group - Intro To Groovy
+# Omaha Java User Group - Intro To Groovy
 
-##Slide Deck
+# Slide Deck
 Then, to start up the local server, run `npm start`
 
 Open a browser and hit http://localhost:3000, and you are ready to roll
 
-### Controls
+#### Controls
 
 |Key Combination|Function|
 |---|---|
@@ -31,7 +31,7 @@ Exporting a totally sweet looking PDF from your totally sweet looking Spectacle 
 - Change destination to "Save as PDF"
 
 
-##Examples
+# Examples
 There are 4 different workshops.  These are just spock tests with certain aspects left to be completed (Marked by TODO's).  To run the tests use the following gradle tasks.
 
 #### Gradle Tasks
