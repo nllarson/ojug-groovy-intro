@@ -1,0 +1,15 @@
+def employees = [
+  new Employee(firstName: 'Steve', middleInitial: 'G', lastName: 'Rogers'),
+  new Employee(firstName: 'Bruce', lastName: 'Banner'),
+  new Employee(firstName: 'Peter', lastName: 'Parker')]
+
+// Loop through each value
+employees.each { employee ->
+  println employee.firstName
+}
+
+// Collect values from list
+employees.collect {it.firstName} == [Steve, Bruce, Peter]
+
+// Spread operator
+employees*.firstName == [Steve, Bruce, Peter]

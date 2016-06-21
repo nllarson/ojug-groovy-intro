@@ -1,0 +1,21 @@
+// Relationship operators
+assert 1 + 2 == 3
+assert 3 != 4
+assert -2 < 3
+assert 3 <= 4
+assert 5 > 1
+assert 5 >= -2
+
+// Logical operators
+assert !false
+assert true && true
+assert true || false
+
+// Ternary operator
+x ? "x is true" : "x is false"
+
+// Elvis operator ?:
+x ?: "x is false"  //same as: x ? x : y
+
+// Null safe operator ?.
+person?.address?.zipCode

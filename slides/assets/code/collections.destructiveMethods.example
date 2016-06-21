@@ -1,0 +1,20 @@
+def employees = [ new Employee(firstName: 'Steve'),
+  new Employee(firstName: 'Bruce'),
+  new Employee(firstName: 'Peter')]
+
+def steve = employees[0]
+
+// use Groovy minus operator to remove one from the list
+// without modifying the original list
+println employees - steve
+> ['Bruce','Peter']
+
+println employees.size()
+> true
+
+// .remove() modifies the original list
+println employees.remove(steve)
+> ['Bruce','Peter']
+
+println employees.size()
+> 2

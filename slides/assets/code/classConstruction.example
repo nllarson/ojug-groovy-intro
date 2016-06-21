@@ -1,0 +1,14 @@
+// new keyword creates a new object
+def steveRogers = new Employee()
+steveRogers.firstName = 'Steve'
+steveRogers.lastName = 'Rogers'
+steveRogers.username = 'srogers'
+steveRogers.password = 'CaptainAmerica'
+
+// Groovy's Map Constructor
+def steveRogers = new Employee(
+      username: 'srogers',
+      password: 'CaptainAmerica',
+      firstName: 'Steve',
+      lastName: 'Rogers'
+)

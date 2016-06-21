@@ -1,0 +1,3 @@
+// Built-in operators and functions that use regular expressions
+assert 'cheese123' =~ 'cheese' // any matches
+assert 'cheese123' ==~ 'cheese[0-9]*' // matches entire string

@@ -1,0 +1,8 @@
+['Steve','Bruce','Peter'].sort()
+> ['Bruce', 'Peter','Steve']
+
+employees.sort(false) { it.lastName }
+> ['Bruce Banner', 'Peter Parker', 'Steve Rogers']
+
+employees
+> ['Steve Rogers', 'Bruce Banner', 'Peter Parker']

@@ -1,0 +1,7 @@
+def one_to_ten = 1..10
+
+one_to_ten.size()
+> 10
+
+one_to_ten.each { print it}
+>12345678910

@@ -1,0 +1,9 @@
+['Steve':'Captain America','Bruce':'Hulk', 'Peter': 'Spiderman'].sort()
+> ['Bruce':'Hulk', 'Peter':'Spiderman', 'Steve':'Captain America']
+
+def heroMap = ['Steve':'Captain America','Bruce':'Hulk', 'Peter': 'Spiderman']
+heroMap.sort(false) {e1, e2 -> e1.key <=> e2.key }
+> ['Bruce':'Hulk', 'Peter':'Spiderman', 'Steve':'Captain America']
+
+heroMap
+>['Steve':'Captain America','Bruce':'Hulk', 'Peter': 'Spiderman']

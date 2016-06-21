@@ -1,0 +1,3 @@
+scope returnType methodName(zeroOrMoreArgs) {
+  // method body
+}

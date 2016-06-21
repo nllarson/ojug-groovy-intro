@@ -1,0 +1,10 @@
+def m = ['Captain America':'Steve Rogers', 'Spider Man':'Peter Parker']
+
+// each will automatically deconstruct the key/value pairs
+m.each { alias, realName ->
+  println "key: $alias value: $realName"
+}
+
+>
+key: Captain America value: Steve Rogers
+key: Spider Man value: Peter Parker

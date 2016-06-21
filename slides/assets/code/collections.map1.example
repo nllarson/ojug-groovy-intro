@@ -1,0 +1,9 @@
+def m = [:]
+m.put('firstName', 'Steve')
+m.put('lastName', 'Rogers')
+println m
+> [firstName:Steve, lastName:Rogers]
+
+def n = [firstName: 'Peter', lastName: 'Parker']
+println n
+> [firstName:Peter, lastName:Parker]

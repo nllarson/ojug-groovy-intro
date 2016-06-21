@@ -1,0 +1,14 @@
+// create a new list, java.util.ArrayList
+def employees = []
+def even = [2,4,6,8,10]
+
+// add an employee to that list
+employees.add(new Employee(firstName: 'Steve'))
+employees << new Employee(firstName: 'Peter')
+
+// .size() works on everything in Groovy
+employees.size() == 2
+'Steve'.size() == 5
+
+// array-like indexed access into the list
+employees[0].firstName == 'Steve'

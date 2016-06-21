@@ -1,0 +1,8 @@
+// assign a closure to variable
+def shout = { String s -> println s.toUpperCase() }
+shout('Steve')
+> 'STEVE'
+
+
+// each element in a collection referenced by 'it'
+[2,4,6,8].each { println it * 2 }

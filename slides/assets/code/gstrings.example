@@ -1,0 +1,7 @@
+// using dollar sign and braces
+println "hello ${employee.firstName} (${employee.username})"
+> hello Steve (srogers)
+
+// braces are optional for simple object.property notation
+println "hello $employee.firstName ($employee.username)"
+> hello Steve (srogers)

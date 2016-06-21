@@ -1,0 +1,26 @@
+def employees = [
+  new Employee(firstName: 'Steve', middleInitial: 'G', lastName: 'Rogers'),
+  new Employee(firstName: 'Bruce', lastName: 'Banner'),
+  new Employee(firstName: 'Peter', lastName: 'Parker')]
+  
+// find first occurrence
+employees.find { it.firstName == 'Bruce' }
+> Bruce Banner
+
+// findAll returns a collection, || or operator
+employees.findAll {
+  it.firstName.startsWith('S') || it.lastName.startsWith('P')
+}
+> [ 'Steve G Rogers', 'Peter Parker']
+
+// groovy truthiness finds all employees with a middle initial
+employees.findAll { it.middleInitial }
+> [Steve G Rogers]</code>
+
+// membership methods
+employees.any { it.firstName == 'Steve' }
+> true
+employees.every { it.middleInitial }
+> false
+employees.every { it.lastName && it.firstName }
+> true</code>

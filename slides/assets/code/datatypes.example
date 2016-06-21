@@ -1,0 +1,5 @@
+def a = 1             // Integer
+def b = 1.0           // BigDecimal
+def c = true          // Boolean
+def d = [1,2,3]       // ArrayList
+def e = [x:1, y:2]    // LinkedHashMap

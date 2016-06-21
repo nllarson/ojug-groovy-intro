@@ -1,0 +1,7 @@
+class Employee {
+    String username
+    String password
+    String firstName
+    String middleInitial
+    String lastName
+}

@@ -1,0 +1,8 @@
+def s = 'Here is a simple string'
+
+// the plus operator performs string concatenation
+def firstName = 'Steve'
+def username = 'srogers'
+
+println 'hello ' + firstName + ' (' + username + ')'
+> hello Steve (srogers)

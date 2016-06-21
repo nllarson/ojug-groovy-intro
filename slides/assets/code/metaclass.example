@@ -1,0 +1,5 @@
+String.metaClass.toSnakeCase = {
+  delegate.toLowerCase().replace(' ', '_')
+}
+
+assert "my_name" == "My Name".toSnakeCase()

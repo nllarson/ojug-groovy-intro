@@ -1,0 +1,20 @@
+def steveRogers = new Employee(
+      username: 'srogers',
+      password: 'CaptainAmerica',
+      firstName: 'Steve',
+      lastName: 'Rogers')
+
+// invoke a method on an object, just like Java
+println steveRogers.toString()
+> first: Steve last: Rogers username: srogers
+
+// call a method, just like java
+println steveRogers.createGreeting()
+> Hello Steve
+
+println steveRogers.createGreeting('Howdy')
+> Howdy Steve
+
+// Groovy - optional parens
+println steveRogers.createGreeting 'Goodbye'
+> Goodbye Steve

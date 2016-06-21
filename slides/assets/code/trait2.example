@@ -1,0 +1,3 @@
+class Person implements Speaking { }
+
+new Person().speak()

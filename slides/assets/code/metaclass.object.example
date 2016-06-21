@@ -1,0 +1,7 @@
+String myString = 'What is your name'
+
+myString.metaClass.addQuestionMark = {
+  delegate + '?'
+}
+
+assert myString.addQuestionMark() == 'What is your name?'

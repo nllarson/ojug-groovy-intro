@@ -1,0 +1,21 @@
+def m = [firstName: 'Steve', lastName: 'Rogers']
+
+// use dot notation for accessing values with Strings as keys
+m.firstName
+> Steve
+
+// also use index notation
+println m['firstName']
+> Steve
+
+// mutate value with assignment
+n = [:]
+n.firstName = 'Peter'
+n.lastName = 'Parker'
+println n
+> [firstName: 'Peter', lastName: 'Parker']
+
+n['firstName'] = 'Bruce'
+n['lastName'] = 'Banner'
+println n
+> [firstName: 'Bruce', lastName: 'Banner']

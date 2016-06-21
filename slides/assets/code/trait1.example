@@ -1,0 +1,5 @@
+trait Speaking {
+  void speak() {
+    println "I'm talking now"
+  }
+}
