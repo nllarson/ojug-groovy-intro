@@ -1,9 +1,11 @@
 # Omaha Java User Group - Intro To Groovy
 
 # Slide Deck
-Start up the local server, run `npm start`
-
-Open a browser and hit http://localhost:3000, and you are ready to roll
+Clone Project
+- `cd slides`
+- `npm install`
+- `npm start`
+- Open a browser and hit http://localhost:3000, and you are ready to roll
 
 #### Controls
 
