@@ -10,7 +10,7 @@ println employees - steve
 > ['Bruce','Peter']
 
 println employees.size()
-> true
+> 3
 
 // .remove() modifies the original list
 println employees.remove(steve)

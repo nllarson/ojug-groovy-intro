@@ -45,7 +45,7 @@ const images = {
 preloader(images);
 
 const theme = createTheme({
-  primary: "#98a390"
+  primary: "#eecdc4"
 });
 
 export default class Presentation extends React.Component {
@@ -112,7 +112,7 @@ export default class Presentation extends React.Component {
               <ListItem>Native support for regular expressions</ListItem>
             </List>
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey" >
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" >
             <Text fit>All data types are objects. Primitives can be used but are autoboxed.</Text>
             <CodePane
               textSize="23px"
@@ -121,7 +121,7 @@ export default class Presentation extends React.Component {
               margin="20px auto"
             />
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey" >
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" >
             <Text caps><b>String</b> literal uses single quotes</Text>
             <CodePane
               textSize="23px"
@@ -130,7 +130,7 @@ export default class Presentation extends React.Component {
               margin="20px auto"
             />
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey" >
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" >
             <Text caps>Groovy Strings aka <b>GStrings</b></Text>
               <List>
                 <ListItem>GString literals specified with double quote</ListItem>
@@ -146,7 +146,7 @@ export default class Presentation extends React.Component {
               margin="20px auto"
             /></Appear>
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey" notes="Groovy Is Object Oriented">
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" notes="Groovy Is Object Oriented">
             <Text caps>A Groovy Class</Text>
             <CodePane
               fit
@@ -156,7 +156,7 @@ export default class Presentation extends React.Component {
               margin="20px auto"
             />
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey" notes="No constructor needed!!!!">
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" notes="No constructor needed!!!!">
             <Text caps>Constructing New Objects</Text>
             <CodePane
               fit
@@ -166,7 +166,7 @@ export default class Presentation extends React.Component {
               margin="20px auto"
             />
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey" >
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" >
             <Text caps>Methods</Text>
             <CodePane
               fit
@@ -183,7 +183,7 @@ export default class Presentation extends React.Component {
               margin="20px auto"
             /></Appear>
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey" >
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" >
             <Text caps>Groovier Methods</Text>
             <List>
               <ListItem>scope is optional - default is public</ListItem>
@@ -193,7 +193,7 @@ export default class Presentation extends React.Component {
               <ListItem>return keyword is optional</ListItem>
             </List>
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey" >
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" >
             <Text caps>Java Method</Text>
             <CodePane
               fit
@@ -212,7 +212,7 @@ export default class Presentation extends React.Component {
               margin="20px auto"/>
               </Appear>
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey" >
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" >
             <Text caps>Calling Methods</Text>
             <CodePane
               fit
@@ -222,12 +222,12 @@ export default class Presentation extends React.Component {
               margin="20px auto"
             />
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey" >
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" >
             <Heading size={2} lineHeight={0.5} fit>
               Conditionals
             </Heading>
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey">
+          <Slide transition={["slide","fade"]} bgColor="lightgrey">
             <Text caps>Groovy Truthiness</Text>
             <List>
               <ListItem margin="20px auto"><Code>null</Code>, <Code>0</Code>, <Code>''</Code>, <Code>[]</Code>, <Code>[:]</Code> evaluate to FALSE</ListItem>
@@ -235,7 +235,7 @@ export default class Presentation extends React.Component {
               <ListItem margin="20px auto">If <Code>Comparable</Code>, <Code>a.compareTo(b)==0</Code></ListItem>
             </List>
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey" align="center flex-start" >
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" align="center flex-start" >
               <CodePane
                 textSize="20px"
                 lang="groovy"
@@ -243,7 +243,7 @@ export default class Presentation extends React.Component {
                 margin="5px auto"
               />
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey" align="center flex-start" >
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" align="center flex-start" >
               <CodePane
                 fit
                 textSize="20px"
@@ -253,7 +253,7 @@ export default class Presentation extends React.Component {
               />
               <Link href="http://groovy-lang.org/operators.html">http://groovy-lang.org/operators.html</Link>
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey">
+          <Slide transition={["slide","fade"]} bgColor="lightgrey">
             <Text caps>Regular Expressions</Text>
               <CodePane
                 fit
@@ -263,7 +263,7 @@ export default class Presentation extends React.Component {
                 margin="5px auto"
               />
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey" align="center flex-start" >
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" align="center flex-start" >
             <Text fit>All operators are method calls under the covers and these method calls can be overwritten</Text>
               <CodePane
                 fit
@@ -274,7 +274,7 @@ export default class Presentation extends React.Component {
               />
               <Link href="http://groovy-lang.org/operators.html#Operator-Overloading">http://groovy-lang.org/operators.html#Operator-Overloading</Link>
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey" >
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" >
             <Text caps>Closures</Text>
             <List>
               <ListItem>Similar to Lambdas</ListItem>
@@ -288,12 +288,12 @@ export default class Presentation extends React.Component {
               margin="20px auto"
             />
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey" >
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" >
             <Heading size={2} lineHeight={0.5} fit>
               Collections
             </Heading>
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey">
+          <Slide transition={["slide","fade"]} bgColor="lightgrey">
             <Text caps>Lists</Text>
               <CodePane
                 fit
@@ -303,7 +303,7 @@ export default class Presentation extends React.Component {
                 margin="5px auto"
               />
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey">
+          <Slide transition={["slide","fade"]} bgColor="lightgrey">
               <Text caps>Looping</Text>
               <CodePane
                 fit
@@ -313,7 +313,7 @@ export default class Presentation extends React.Component {
                 margin="5px auto"
               />
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey" align="center flex-start" >
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" align="center flex-start" >
               <Text caps>Searching</Text>
               <CodePane
                 fit
@@ -323,7 +323,7 @@ export default class Presentation extends React.Component {
                 margin="5px auto"
               />
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey" >
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" >
             <Text caps>Sorting</Text>
             <List>
               <ListItem><Code>.sort()</Code> can be called on any collection</ListItem>
@@ -338,7 +338,7 @@ export default class Presentation extends React.Component {
               margin="20px auto"
             />
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey" align="center flex-start" >
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" align="center flex-start" >
             <Text caps>Destructive Methods</Text>
             <Text fit>Some methods mutate the list, others return a modified list.</Text>
             <CodePane
@@ -349,7 +349,7 @@ export default class Presentation extends React.Component {
               margin="20px auto"
             />
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey">
+          <Slide transition={["slide","fade"]} bgColor="lightgrey">
             <Text caps>Maps</Text>
               <CodePane
                 fit
@@ -359,7 +359,7 @@ export default class Presentation extends React.Component {
                 margin="5px auto"
               />
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey"  align="center flex-start" >
+          <Slide transition={["slide","fade"]} bgColor="lightgrey"  align="center flex-start" >
               <Text caps>Access</Text>
               <CodePane
                 fit
@@ -369,7 +369,7 @@ export default class Presentation extends React.Component {
                 margin="5px auto"
               />
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey">
+          <Slide transition={["slide","fade"]} bgColor="lightgrey">
               <Text caps>Looping</Text>
               <CodePane
                 fit
@@ -379,7 +379,7 @@ export default class Presentation extends React.Component {
                 margin="5px auto"
               />
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey">
+          <Slide transition={["slide","fade"]} bgColor="lightgrey">
               <Text caps>Sorting</Text>
               <CodePane
                 fit
@@ -389,7 +389,7 @@ export default class Presentation extends React.Component {
                 margin="5px auto"
               />
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey">
+          <Slide transition={["slide","fade"]} bgColor="lightgrey">
             <Text caps>Ranges</Text>
               <CodePane
                 fit
@@ -399,12 +399,12 @@ export default class Presentation extends React.Component {
                 margin="5px auto"
               />
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey" >
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" >
             <Heading size={2} lineHeight={0.5} fit>
               Metaclass Programming
             </Heading>
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey">
+          <Slide transition={["slide","fade"]} bgColor="lightgrey">
             <Text caps>MetaClass Example</Text>
               <Text fit>Add a toSnakeCase method to the String class that converts the string to snake-case</Text>
               <Appear><CodePane
@@ -415,7 +415,7 @@ export default class Presentation extends React.Component {
                 margin="5px auto"
               /></Appear>
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey" notes="Modifying metaclass can be useful for framework development, but can also be confusing">
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" notes="Modifying metaclass can be useful for framework development, but can also be confusing">
             <Text caps>MetaClass Object Example</Text>
             <Text fit>Add an addQuestionMark method to a String object that adds a question mark to the end of the string</Text>
             <Appear><CodePane
@@ -426,12 +426,12 @@ export default class Presentation extends React.Component {
               margin="5px auto"
             /></Appear>
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey" >
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" >
             <Heading size={2} lineHeight={0.5} fit>
               Traits
             </Heading>
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey">
+          <Slide transition={["slide","fade"]} bgColor="lightgrey">
             <Text caps>Trait Example</Text>
             <CodePane
                 fit
@@ -441,7 +441,7 @@ export default class Presentation extends React.Component {
                 margin="5px auto"
             />
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey">
+          <Slide transition={["slide","fade"]} bgColor="lightgrey">
             <Text caps>Trait Usage</Text>
             <CodePane
                 fit
@@ -451,13 +451,28 @@ export default class Presentation extends React.Component {
                 margin="5px auto"
             />
           </Slide>
-          <Slide transition={["slide"]} bgColor="lightgrey" >
-            <Text fit>Traits great for adding reusable capabilities to a class without requiring large inheritance tree</Text>
-              <Text textAlign="center">Public fields</Text>
-              <Text textAlign="center">Methods</Text>
-              <Text textAlign="center">Private variables</Text>
-              <Text textAlign="center">Abstract methods</Text>
-            <Text fit>If multiple traits have the same method, the last trait in 'implements' list wins</Text>
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" >
+            <Text fit>Traits are great for adding reusable capabilities to a class without requiring large inheritance tree</Text>
+              <Text textAlign="center" margin="20px auto">Public fields</Text>
+              <Text textAlign="center" margin="20px auto">Methods</Text>
+              <Text textAlign="center" margin="20px auto">Private variables</Text>
+              <Text textAlign="center" margin="20px auto">Abstract methods</Text>
+            <Text fit>If multiple traits have the same method, the last trait in the 'implements' list wins</Text>
+          </Slide>
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" >
+            <Heading size={2} lineHeight={0.5} fit>
+              Reference
+            </Heading>
+            <List>
+              <ListItem><Link href="http://groovy-lang.org" textColor="black">http://groovy-lang.org</Link></ListItem>
+              <ListItem><Link href="http://stackoverflow.com/tags/groovy/info" textColor="black">http://stackoverflow.com/tags/groovy/info</Link></ListItem>
+              <ListItem><Link href="http://www.manning.com/koenig2/" textColor="black">http://www.manning.com/koenig2/</Link></ListItem>
+            </List>
+          </Slide>
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" >
+            <Heading size={2} lineHeight={0.5} fit>
+              Examples
+            </Heading>
           </Slide>
         </Deck>
       </Spectacle>
