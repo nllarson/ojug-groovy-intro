@@ -1,7 +1,7 @@
 # Omaha Java User Group - Intro To Groovy
 
 # Slide Deck
-Then, to start up the local server, run `npm start`
+Start up the local server, run `npm start`
 
 Open a browser and hit http://localhost:3000, and you are ready to roll
 
