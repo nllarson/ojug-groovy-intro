@@ -1,7 +1,7 @@
 # Omaha Java User Group - Intro To Groovy
 
 # Slide Deck
-Clone Project
+- clone project
 - `cd slides`
 - `npm install`
 - `npm start`
