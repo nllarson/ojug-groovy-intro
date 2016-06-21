@@ -48,3 +48,6 @@ There are 4 different workshops.  These are just spock tests with certain aspect
 
 #### Solutions
 The solutions folder contains working copies of all the workshops and groovy classes if you become stuck.
+
+
+# [Spectacle](http://formidable.com/open-source/spectacle/) - A ReactJS Presentation Library from @formidablelabs
