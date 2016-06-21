@@ -1,4 +1,3 @@
-// new keyword creates a new object
 def steveRogers = new Employee()
 steveRogers.firstName = 'Steve'
 steveRogers.lastName = 'Rogers'

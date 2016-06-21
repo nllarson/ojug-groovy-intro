@@ -108,8 +108,6 @@ export default class Presentation extends React.Component {
               <ListItem>Additional operators: Null safe, Elvis, etc</ListItem>
               <ListItem>Closures</ListItem>
               <ListItem>Operator overloading</ListItem>
-              <ListItem>Meta Object Protocol</ListItem>
-              <ListItem>Native support for regular expressions</ListItem>
             </List>
           </Slide>
           <Slide transition={["slide","fade"]} bgColor="lightgrey" >
@@ -133,7 +131,7 @@ export default class Presentation extends React.Component {
           <Slide transition={["slide","fade"]} bgColor="lightgrey" >
             <Text caps>Groovy Strings aka <b>GStrings</b></Text>
               <List>
-                <ListItem>GString literals specified with double quote</ListItem>
+                <ListItem>GString literals specified with double quotes</ListItem>
                 <ListItem>supports embedded expressions</ListItem>
                 <ListItem>braces are optional for simple expressions</ListItem>
                 <ListItem>triple quote for multi-line GStrings (handy for XML/json)</ListItem>
@@ -189,7 +187,7 @@ export default class Presentation extends React.Component {
               <ListItem>scope is optional - default is public</ListItem>
               <ListItem>return type is optional - use <b>def</b> keyword</ListItem>
               <ListItem>types are optional for method arguments</ListItem>
-              <ListItem>method arguments can be defaulted defaults</ListItem>
+              <ListItem>method arguments can be defaulted</ListItem>
               <ListItem>return keyword is optional</ListItem>
             </List>
           </Slide>
@@ -230,18 +228,10 @@ export default class Presentation extends React.Component {
           <Slide transition={["slide","fade"]} bgColor="lightgrey">
             <Text caps>Groovy Truthiness</Text>
             <List>
-              <ListItem margin="20px auto"><Code>null</Code>, <Code>0</Code>, <Code>''</Code>, <Code>[]</Code>, <Code>[:]</Code> evaluate to FALSE</ListItem>
-              <ListItem margin="20px auto"><Code>==</Code> is the equivelent of <Code>a.equals(b)</Code></ListItem>
-              <ListItem margin="20px auto">If <Code>Comparable</Code>, <Code>a.compareTo(b)==0</Code></ListItem>
+              <Appear><ListItem margin="20px auto"><Code>null</Code>, <Code>0</Code>, <Code>''</Code>, <Code>[]</Code>, <Code>[:]</Code> evaluate to FALSE</ListItem></Appear>
+              <Appear><ListItem margin="20px auto"><Code>==</Code> is the equivelent of <Code>a.equals(b)</Code></ListItem></Appear>
+              <Appear><ListItem margin="20px auto">If <Code>Comparable</Code>, <Code>a.compareTo(b)==0</Code></ListItem></Appear>
             </List>
-          </Slide>
-          <Slide transition={["slide","fade"]} bgColor="lightgrey" align="center flex-start" >
-              <CodePane
-                textSize="20px"
-                lang="groovy"
-                source={require("raw!../assets/code/operators.example")}
-                margin="5px auto"
-              />
           </Slide>
           <Slide transition={["slide","fade"]} bgColor="lightgrey" align="center flex-start" >
               <CodePane
@@ -264,6 +254,14 @@ export default class Presentation extends React.Component {
               />
           </Slide>
           <Slide transition={["slide","fade"]} bgColor="lightgrey" align="center flex-start" >
+              <CodePane
+                textSize="20px"
+                lang="groovy"
+                source={require("raw!../assets/code/operators.example")}
+                margin="5px auto"
+              />
+          </Slide>
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" align="center flex-start" >
             <Text fit>All operators are method calls under the covers and these method calls can be overwritten</Text>
               <CodePane
                 fit
@@ -273,6 +271,16 @@ export default class Presentation extends React.Component {
                 margin="5px auto"
               />
               <Link href="http://groovy-lang.org/operators.html#Operator-Overloading">http://groovy-lang.org/operators.html#Operator-Overloading</Link>
+          </Slide>
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" >
+            <Heading size={2} fit>
+              Example 1
+            </Heading>
+          </Slide>
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" >
+            <Heading size={2} lineHeight={0.5} fit>
+              Collections
+            </Heading>
           </Slide>
           <Slide transition={["slide","fade"]} bgColor="lightgrey" >
             <Text caps>Closures</Text>
@@ -287,11 +295,6 @@ export default class Presentation extends React.Component {
               source={require("raw!../assets/code/closures.example")}
               margin="20px auto"
             />
-          </Slide>
-          <Slide transition={["slide","fade"]} bgColor="lightgrey" >
-            <Heading size={2} lineHeight={0.5} fit>
-              Collections
-            </Heading>
           </Slide>
           <Slide transition={["slide","fade"]} bgColor="lightgrey">
             <Text caps>Lists</Text>
@@ -349,6 +352,11 @@ export default class Presentation extends React.Component {
               margin="20px auto"
             />
           </Slide>
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" >
+            <Heading size={2} fit>
+              Example 2
+            </Heading>
+          </Slide>
           <Slide transition={["slide","fade"]} bgColor="lightgrey">
             <Text caps>Maps</Text>
               <CodePane
@@ -398,6 +406,11 @@ export default class Presentation extends React.Component {
                 source={require("raw!../assets/code/collections.range1.example")}
                 margin="5px auto"
               />
+          </Slide>
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" >
+            <Heading size={2} fit>
+              Example 3
+            </Heading>
           </Slide>
           <Slide transition={["slide","fade"]} bgColor="lightgrey" >
             <Heading size={2} lineHeight={0.5} fit>
@@ -460,6 +473,11 @@ export default class Presentation extends React.Component {
             <Text fit>If multiple traits have the same method, the last trait in the 'implements' list wins</Text>
           </Slide>
           <Slide transition={["slide","fade"]} bgColor="lightgrey" >
+            <Heading size={2} fit>
+              Example 4
+            </Heading>
+          </Slide>
+          <Slide transition={["slide","fade"]} bgColor="lightgrey" >
             <Heading size={2} lineHeight={0.5} fit>
               Reference
             </Heading>
@@ -468,11 +486,6 @@ export default class Presentation extends React.Component {
               <ListItem><Link href="http://stackoverflow.com/tags/groovy/info" textColor="black">http://stackoverflow.com/tags/groovy/info</Link></ListItem>
               <ListItem><Link href="http://www.manning.com/koenig2/" textColor="black">http://www.manning.com/koenig2/</Link></ListItem>
             </List>
-          </Slide>
-          <Slide transition={["slide","fade"]} bgColor="lightgrey" >
-            <Heading size={2} lineHeight={0.5} fit>
-              Examples
-            </Heading>
           </Slide>
         </Deck>
       </Spectacle>
