@@ -44,6 +44,7 @@ tasks.withType(Test) {
   testLogging {
     // Show that tests are run in the command-line output
     events 'passed', 'failed'
-    showExceptions = false
+    showExceptions = true
+    exceptionFormat = 'full'
   }
 }
